@@ -1,0 +1,12 @@
+﻿@model List<string>
+@{
+    ViewBag.Title = "Cache";
+}
+
+<h2>Cache</h2>
+
+
+@foreach (var key in @Model)
+{
+    <p>@key</p> 
+}

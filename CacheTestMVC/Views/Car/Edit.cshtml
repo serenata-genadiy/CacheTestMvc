@@ -1,0 +1,36 @@
+﻿@model CacheTestMVC.Models.Car
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit</h2>
+
+<fieldset>
+    <legend>Car</legend>
+
+    <div class="display-label">
+         @Html.LabelFor(model => model.Name)
+    </div>
+    <div class="display-field">
+        @Html.EditorFor(model => model.Name)
+    </div>
+
+    <div class="display-label">
+         @Html.LabelFor(model => model.Brand)
+    </div>
+    <div class="display-field">
+        @Html.EditorFor(model => model.Brand)
+    </div>
+
+    <div class="display-label">
+         @Html.LabelFor(model => model.Year)
+    </div>
+    <div class="display-field">
+        @Html.EditorFor(model => model.Year)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
